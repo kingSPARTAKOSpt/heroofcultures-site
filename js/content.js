@@ -7,11 +7,9 @@ window.HOC = {
 
   /* ---- Links ---------------------------------------------------------- */
   links: {
-    // TODO: move downloads to itch.io (trustworthy page + PC and Android builds)
-    downloadPC: 'https://limewire.com/d/dhKLt#cFShY8rNQY',
-    downloadAndroid: 'https://drive.google.com/file/d/1OOxVR3Zq_6-93z-X5R2fIeZbnJfTgMmn/view?usp=drive_web',
-    steam: '',
-    googlePlay: '',
+    // Epic Games Store page (works once the product is live on the store).
+    epicStore: 'https://store.epicgames.com/p/hoc-be3b3d',
+    googlePlay: '',   // Android: coming soon
     itch: ''
   },
 
@@ -29,14 +27,24 @@ window.HOC = {
   /* ---- News (newest first; the home page shows the first 3) ------------ */
   news: [
     {
-      date: '2026-09',
-      tag: { en: 'Multiplayer', pt: 'Multijogador' },
-      title: { en: 'Online crossplay in testing', pt: 'Crossplay online em testes' },
+      date: '2026-10',
+      tag: { en: 'Early Access', pt: 'Early Access' },
+      title: { en: 'Free to play on the Epic Games Store', pt: 'Grátis na Epic Games Store' },
       text: {
-        en: 'PC and Android players can join the same online match through lobbies with invite codes, teams and ready checks.',
-        pt: 'Jogadores de PC e Android entram no mesmo jogo online, com lobbies, códigos de convite, equipas e confirmação de pronto.'
+        en: 'Hero of Cultures II enters Early Access on PC through the Epic Games Store — free to play, with a Full Game add-on for unlimited matchmaking, online lobbies and LAN games.',
+        pt: 'O Hero of Cultures II entra em Early Access no PC pela Epic Games Store — grátis, com um add-on Full Game para matchmaking ilimitado, lobbies online e jogos em LAN.'
       },
-      image: '' // e.g. 'img/news/crossplay.webp'
+      image: 'img/cover.webp'
+    },
+    {
+      date: '2026-10',
+      tag: { en: 'Heroes', pt: 'Heróis' },
+      title: { en: 'Heroes on the battlefield', pt: 'Heróis no campo de batalha' },
+      text: {
+        en: 'Your hero leads from the front: wake them, follow them in line or square, and use their skills to turn the battle.',
+        pt: 'O teu herói lidera da frente: acorda-o, segue-o em linha ou em quadrado e usa as suas habilidades para virar a batalha.'
+      },
+      image: 'img/shots/shot_05.webp'
     },
     {
       date: '2026-09',
@@ -46,17 +54,7 @@ window.HOC = {
         en: 'Scout to see: forests hide units and the unknown stays dark. Zoom out and the 3D battlefield turns into a painted 2D map.',
         pt: 'Só vês o que exploras: as florestas escondem unidades e o desconhecido fica às escuras. Afasta a câmara e o campo 3D passa a mapa 2D pintado.'
       },
-      image: ''
-    },
-    {
-      date: '2026-09',
-      tag: { en: 'Game mode', pt: 'Modo de jogo' },
-      title: { en: 'Deploy mode in development', pt: 'Modo Deploy em desenvolvimento' },
-      text: {
-        en: 'Place up to 100 units in 10 groups before the fight begins — then let steel decide.',
-        pt: 'Coloca até 100 unidades em 10 grupos antes da batalha começar — depois o aço decide.'
-      },
-      image: ''
+      image: 'img/hero-map.webp'
     }
   ],
 
@@ -77,14 +75,14 @@ window.HOC = {
     {
       title: 'Hero of Cultures II',
       genre: { en: 'Real-time strategy', pt: 'Estratégia em tempo real' },
-      platforms: 'PC · Android',
-      status: { en: 'Pre-alpha — play free', pt: 'Pré-alfa — joga grátis' },
+      platforms: 'PC · Android (coming soon)',
+      status: { en: 'Early Access — free to play', pt: 'Early Access — grátis' },
       text: {
-        en: 'The strategy game: armies, eras and crossplay battles on PC and mobile.',
-        pt: 'O jogo de estratégia: exércitos, eras e batalhas em crossplay no PC e no telemóvel.'
+        en: 'The strategy game: heroes, armies and historical battles — on PC now, on mobile soon.',
+        pt: 'O jogo de estratégia: heróis, exércitos e batalhas históricas — no PC agora, no telemóvel em breve.'
       },
       link: '#play',
-      image: '' // e.g. 'img/games/hoc2.webp'
+      image: 'img/cover.webp'
     },
     {
       title: 'Hero of Cultures',

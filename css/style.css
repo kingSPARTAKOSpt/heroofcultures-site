@@ -57,6 +57,7 @@ p:last-child { margin-bottom: 0; }
 .btn--gold { background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo)); color: var(--ink); }
 .btn--outline { background: rgba(232, 184, 92, .08); color: var(--gold-hi); box-shadow: inset 0 0 0 1px var(--line); }
 .btn--outline:hover { background: rgba(232, 184, 92, .16); }
+.btn.is-soon { opacity: .55; cursor: default; pointer-events: none; }
 .btn--sm { --c: 8px; padding: .7em 1.2em; font-size: .72rem; }
 .btn--lg { padding: 1.1em 2.4em; font-size: .9rem; }
 
