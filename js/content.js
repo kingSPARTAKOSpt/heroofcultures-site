@@ -9,13 +9,14 @@ window.HOC = {
   links: {
     // Epic Games Store page (works once the product is live on the store).
     epicStore: 'https://store.epicgames.com/p/hoc-be3b3d',
+    discord: 'https://discord.gg/EJ8BTv39P',
     googlePlay: '',   // Android: coming soon
     itch: ''
   },
 
   // Social icons in the footer; only the ones with a URL are shown.
   social: {
-    discord: '',
+    discord: 'https://discord.gg/EJ8BTv39P',
     youtube: '',
     twitch: '',
     x: '',

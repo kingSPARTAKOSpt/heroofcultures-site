@@ -323,3 +323,9 @@ a.card:hover, .card:hover { border-color: var(--line); transform: translateY(-3p
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card, .era { transition: none; }
 }
+
+/* Icons in buttons and social links */
+.btn--icon { display: inline-flex; align-items: center; gap: 10px; }
+.btn--icon svg { width: 22px; height: 22px; fill: currentColor; }
+.social__link { display: inline-flex; align-items: center; gap: 8px; }
+.social__link svg { width: 22px; height: 22px; fill: currentColor; }

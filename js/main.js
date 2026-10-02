@@ -105,13 +105,18 @@
   }
 
   var SOCIAL_NAMES = { discord: 'Discord', youtube: 'YouTube', twitch: 'Twitch', x: 'X', instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok' };
+  // Simple-icons style glyphs (24x24 viewBox).
+  var SOCIAL_ICONS = {
+    discord: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.85a13.8 13.8 0 0 0-.63 1.29 18.4 18.4 0 0 0-5.53 0 13.6 13.6 0 0 0-.64-1.29 19.7 19.7 0 0 0-4.92 1.52C.53 9.05-.32 13.6.1 18.09a19.9 19.9 0 0 0 6.03 3.05 14.7 14.7 0 0 0 1.29-2.1 12.9 12.9 0 0 1-2.03-.97c.17-.13.34-.26.5-.4a14.2 14.2 0 0 0 12.22 0c.16.14.33.27.5.4-.65.38-1.33.71-2.04.98.37.74.8 1.44 1.29 2.1a19.8 19.8 0 0 0 6.04-3.06c.5-5.18-.84-9.69-3.58-13.72M8.02 15.33c-1.18 0-2.16-1.09-2.16-2.42s.96-2.42 2.16-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.96 2.42-2.16 2.42m7.97 0c-1.18 0-2.16-1.09-2.16-2.42s.96-2.42 2.16-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.95 2.42-2.16 2.42"/></svg>'
+  };
   function renderSocial() {
     var box = document.getElementById('social');
     box.innerHTML = '';
     Object.keys(C.social).forEach(function (k) {
       var url = C.social[k];
       if (!url) return;
-      var a = el('a', 'social__link', esc(SOCIAL_NAMES[k] || k));
+      var a = el('a', 'social__link', (SOCIAL_ICONS[k] || '') + '<span>' + esc(SOCIAL_NAMES[k] || k) + '</span>');
+      a.setAttribute('aria-label', SOCIAL_NAMES[k] || k);
       a.href = url; a.target = '_blank'; a.rel = 'noopener';
       box.appendChild(a);
     });

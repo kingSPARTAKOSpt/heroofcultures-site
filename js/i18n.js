@@ -42,6 +42,7 @@ window.HOC_PT = {
   'play.lead': 'O Hero of Cultures II é grátis em Early Access. O add-on Full Game desbloqueia matchmaking ilimitado em todos os modos, lobbies online e jogos em LAN. Conta com mudanças — e diz-nos o que achas.',
   'play.epic': 'Grátis na Epic Games Store',
   'play.android': 'Android — em breve',
+  'play.discord': 'Entra no nosso Discord',
   'play.note': 'Windows 10/11 64-bit. A arte gerada por IA é usada apenas durante o Early Access e será totalmente substituída no lançamento oficial.',
 
   'footer.rights': 'Todos os direitos reservados.',
