@@ -104,6 +104,25 @@
     });
   }
 
+  function renderMore() {
+    var list = document.getElementById('moreList');
+    if (!list || !C.moreGames) return;
+    list.innerHTML = '';
+    C.moreGames.forEach(function (g) {
+      var card = el(g.link ? 'a' : 'article', 'card card--game reveal');
+      if (g.link) { card.href = g.link; card.target = '_blank'; card.rel = 'noopener'; }
+      card.appendChild(slot(g.image, 'Key art · 16:9', g.title));
+      var body = el('div', 'card__body');
+      body.innerHTML =
+        '<p class="card__meta"><span class="tag">' + esc(t(g.genre)) + '</span><span>' + esc(g.platforms) + '</span></p>' +
+        '<h3 class="card__title">' + esc(g.title) + '</h3>' +
+        '<p>' + esc(t(g.text)) + '</p>' +
+        '<p class="card__status">' + esc(g.link ? t({ en: 'Play now', pt: 'Joga já' }) : t(g.status)) + '</p>';
+      card.appendChild(body);
+      list.appendChild(card);
+    });
+  }
+
   var SOCIAL_NAMES = { discord: 'Discord', youtube: 'YouTube', twitch: 'Twitch', x: 'X', instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok' };
   // Simple-icons style glyphs (24x24 viewBox).
   var SOCIAL_ICONS = {
@@ -143,7 +162,7 @@
     var btn = document.getElementById('langBtn');
     btn.textContent = l === 'pt' ? 'EN' : 'PT';
     btn.setAttribute('aria-label', l === 'pt' ? 'Switch to English' : 'Mudar para português');
-    renderEras(); renderNews(); renderGames();
+    renderEras(); renderNews(); renderGames(); renderMore();
     observeReveals();
     store('hoc-lang', l);
   }

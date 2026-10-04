@@ -29,13 +29,23 @@ window.HOC = {
   news: [
     {
       date: '2026-10',
-      tag: { en: 'Early Access', pt: 'Early Access' },
-      title: { en: 'Free to play on the Epic Games Store', pt: 'Grátis na Epic Games Store' },
+      tag: { en: 'News', pt: 'Novidades' },
+      title: { en: 'Free demo and crossplatform on the way', pt: 'Demo grátis e crossplatform a caminho' },
       text: {
-        en: 'Hero of Cultures enters Early Access on PC through the Epic Games Store — free to play, with a Full Game add-on for choosing your battles, online lobbies, LAN games, two cultures and hero customization.',
-        pt: 'O Hero of Cultures entra em Early Access no PC pela Epic Games Store — grátis, com um add-on Full Game para escolheres as tuas batalhas, lobbies online, jogos em LAN, duas culturas e personalização do herói.'
+        en: 'Hero of Cultures is coming to the Epic Games Store as a full game with a free demo. PC and Android crossplatform play is coming soon - one game, the same battles on desktop and mobile.',
+        pt: 'O Hero of Cultures chega à Epic Games Store como jogo completo, com uma demo grátis. O jogo crossplatform entre PC e Android vem em breve - um só jogo, as mesmas batalhas no computador e no telemóvel.'
       },
       image: 'img/cover.webp'
+    },
+    {
+      date: '2026-10',
+      tag: { en: 'HoC: Spartakos', pt: 'HoC: Spartakos' },
+      title: { en: 'Spartakos: the ludus of Batiatus', pt: 'Spartakos: o ludus de Batiatus' },
+      text: {
+        en: 'The third-person mode takes shape: walk the ludus, challenge gladiators to side-view duels with counters, grabs and wall slams, ride horses, and follow Gannicus, Crixus and Spartakos through one story.',
+        pt: 'O modo na terceira pessoa ganha forma: anda pelo ludus, desafia gladiadores para duelos de lado com contra-ataques, agarrões e embates contra paredes, monta a cavalo e segue Gannicus, Crixus e Spartakos numa só história.'
+      },
+      image: ''
     },
     {
       date: '2026-10',
@@ -61,14 +71,37 @@ window.HOC = {
 
   /* ---- Eras (the "Rise through the eras" row) -------------------------- */
   eras: [
-    { en: 'Neolithic',        pt: 'Neolítico',         d: { en: 'Tribes, fire, stone tools',       pt: 'Tribos, fogo, ferramentas de pedra' } },
-    { en: 'Ancient East',     pt: 'Antiguidade Oriental', d: { en: 'Writing, irrigation, the wheel', pt: 'Escrita, irrigação, a roda' } },
-    { en: 'Classical Greece', pt: 'Grécia Clássica',   d: { en: 'Hoplites, phalanx, triremes',     pt: 'Hoplitas, falange, trirremes' } },
-    { en: 'Rome',             pt: 'Roma',              d: { en: 'Legions, roads, siege engines',   pt: 'Legiões, estradas, máquinas de cerco' } },
-    { en: 'Medieval',         pt: 'Medieval',          d: { en: 'Knights, castles, longbows',      pt: 'Cavaleiros, castelos, arcos longos' } },
-    { en: 'Renaissance',      pt: 'Renascimento',      d: { en: 'Pikes, mercenaries, early guns',  pt: 'Piques, mercenários, primeiras armas de fogo' } },
-    { en: 'Age of Discovery', pt: 'Descobrimentos',    d: { en: 'Caravels, muskets, cannon',       pt: 'Caravelas, mosquetes, canhões' } },
-    { en: 'Industrial',       pt: 'Industrial',        d: { en: 'Rifles, steam, artillery',        pt: 'Espingardas, vapor, artilharia' } }
+    { en: 'Origins',  pt: 'Origens',  d: { en: 'Villagers, gathering and building - found your people', pt: 'Aldeões, recolha e construção - funda o teu povo' } },
+    { en: 'Kingdoms', pt: 'Reinos',   d: { en: 'Armies: infantry, archers, cavalry and siege', pt: 'Exércitos: infantaria, arqueiros, cavalaria e cerco' } },
+    { en: 'Empires',  pt: 'Impérios', d: { en: 'Your hero rises: new look and upgrades for your army', pt: 'O teu herói ascende: novo visual e melhorias para o exército' } }
+  ],
+
+  /* ---- More games from PraeliaLab (the "More games" row; link '' = Coming soon) ---- */
+  moreGames: [
+    {
+      title: 'Stickman Ultimate',
+      genre: { en: 'Fighting', pt: 'Luta' },
+      platforms: 'Android · PC',
+      status: { en: 'Coming soon - Early Access', pt: 'Em breve - Early Access' },
+      text: {
+        en: 'Fast stickman fighting - online & LAN 1v1 battles.',
+        pt: 'Luta de stickman rápida - batalhas 1v1 online e em LAN.'
+      },
+      link: '',
+      image: ''
+    },
+    {
+      title: 'Target',
+      genre: { en: 'Battle royale', pt: 'Battle royale' },
+      platforms: 'PC · mobile and consoles later',
+      status: { en: 'Coming soon', pt: 'Em breve' },
+      text: {
+        en: '100-player first-person battle royale. Peek in third person. Get marked. Become the target.',
+        pt: 'Battle royale na primeira pessoa para 100 jogadores. Espreita na terceira pessoa. Fica marcado. Torna-te o alvo.'
+      },
+      link: '',
+      image: ''
+    }
   ],
 
   /* ---- Games in the series -------------------------------------------- */
