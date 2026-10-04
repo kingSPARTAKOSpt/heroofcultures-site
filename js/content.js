@@ -32,8 +32,8 @@ window.HOC = {
       tag: { en: 'Early Access', pt: 'Early Access' },
       title: { en: 'Free to play on the Epic Games Store', pt: 'Grátis na Epic Games Store' },
       text: {
-        en: 'Hero of Cultures II enters Early Access on PC through the Epic Games Store — free to play, with a Full Game add-on for unlimited matchmaking, online lobbies and LAN games.',
-        pt: 'O Hero of Cultures II entra em Early Access no PC pela Epic Games Store — grátis, com um add-on Full Game para matchmaking ilimitado, lobbies online e jogos em LAN.'
+        en: 'Hero of Cultures enters Early Access on PC through the Epic Games Store — free to play, with a Full Game add-on for choosing your battles, online lobbies, LAN games, two cultures and hero customization.',
+        pt: 'O Hero of Cultures entra em Early Access no PC pela Epic Games Store — grátis, com um add-on Full Game para escolheres as tuas batalhas, lobbies online, jogos em LAN, duas culturas e personalização do herói.'
       },
       image: 'img/cover.webp'
     },
@@ -74,25 +74,37 @@ window.HOC = {
   /* ---- Games in the series -------------------------------------------- */
   games: [
     {
-      title: 'Hero of Cultures II',
-      genre: { en: 'Real-time strategy', pt: 'Estratégia em tempo real' },
+      title: 'HoC II',
+      genre: { en: 'Real-time strategy — base game', pt: 'Estratégia em tempo real — jogo base' },
       platforms: 'PC · Android (coming soon)',
       status: { en: 'Early Access — free to play', pt: 'Early Access — grátis' },
       text: {
-        en: 'The strategy game: heroes, armies and historical battles — on PC now, on mobile soon.',
-        pt: 'O jogo de estratégia: heróis, exércitos e batalhas históricas — no PC agora, no telemóvel em breve.'
+        en: 'The RTS mode of Hero of Cultures: heroes, armies and historical battles — on PC now, on mobile soon.',
+        pt: 'O modo RTS do Hero of Cultures: heróis, exércitos e batalhas históricas — no PC agora, no telemóvel em breve.'
       },
       link: '#play',
       image: 'img/cover.webp'
     },
     {
-      title: 'Hero of Cultures',
-      genre: { en: 'Third-person action', pt: 'Ação na terceira pessoa' },
-      platforms: 'PC',
+      title: 'HoC: Spartakos',
+      genre: { en: 'Third-person action — base game', pt: 'Ação na terceira pessoa — jogo base' },
+      platforms: 'PC · Android',
       status: { en: 'In development', pt: 'Em desenvolvimento' },
       text: {
-        en: 'Walk the battlefield as a single hero.',
-        pt: 'Percorre o campo de batalha como um só herói.'
+        en: 'From the arena to freedom: fight as Spartakos, in the same game.',
+        pt: 'Da arena à liberdade: luta como Spartakos, no mesmo jogo.'
+      },
+      link: '',
+      image: ''
+    },
+    {
+      title: 'HoC: Discoveries',
+      genre: { en: 'DLC — third-person adventure + new RTS cultures', pt: 'DLC — aventura na terceira pessoa + novas culturas no RTS' },
+      platforms: 'PC · Android',
+      status: { en: 'Coming later', pt: 'Mais tarde' },
+      text: {
+        en: 'Sail beyond the known world: Portuguese, Spanish, English and French.',
+        pt: 'Navega além do mundo conhecido: Portugueses, Espanhóis, Ingleses e Franceses.'
       },
       link: '',
       image: ''

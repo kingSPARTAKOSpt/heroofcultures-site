@@ -14,7 +14,7 @@ window.HOC_PT = {
   'hero.badge': 'Early Access · Grátis',
   'hero.soon': '· em breve',
   'hero.headline': 'Comanda exércitos.<br><em>Muda a história.</em>',
-  'hero.lead': 'Um jogo de estratégia histórica em tempo real em que heróis lideram exércitos em batalha. Grátis no PC — Android em breve.',
+  'hero.lead': 'Um jogo de estratégia histórica em que heróis lideram exércitos em batalha — e lutam na terceira pessoa. Grátis no PC, Android em breve.',
   'hero.available': 'Disponível para',
 
   'f1.kicker': 'Lidera os teus',
@@ -35,11 +35,11 @@ window.HOC_PT = {
   'news.word': 'Novidades',
 
   'series.kicker': 'Hero of Cultures',
-  'series.word': 'A série',
+  'series.word': 'Um jogo, três modos',
 
   'play.kicker': 'Junta-te à',
   'play.word': 'Batalha',
-  'play.lead': 'O Hero of Cultures II é grátis em Early Access. O add-on Full Game desbloqueia matchmaking ilimitado em todos os modos, lobbies online e jogos em LAN. Conta com mudanças — e diz-nos o que achas.',
+  'play.lead': 'O Hero of Cultures é grátis em Early Access: matchmaking ilimitado (campo de batalha e cultura ao acaso) e jogos contra a IA. O add-on Full Game deixa-te escolher campos de batalha, regras e cultura, e junta lobbies online, jogos em LAN, duas culturas (República Romana e Gladiadores), personalização do herói e campanhas em desenvolvimento. Conta com mudanças — e diz-nos o que achas.',
   'play.epic': 'Grátis na Epic Games Store',
   'play.android': 'Android — em breve',
   'play.discord': 'Entra no nosso Discord',
