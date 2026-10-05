@@ -42,5 +42,25 @@ window.HOC = {
       link: '../target/',
       image: '../target/img/keyart.webp'
     }
+  ],
+
+  requirements: [
+    { title: { en: 'PC - minimum', pt: 'PC - mínimos' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Windows 10/11 64-bit'],
+      [{ en: 'Processor', pt: 'Processador' }, { en: '2 cores, 2.0 GHz', pt: '2 núcleos, 2,0 GHz' }],
+      [{ en: 'Memory', pt: 'Memória' }, '4 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, { en: 'DirectX 11, integrated graphics', pt: 'DirectX 11, gráfica integrada' }],
+      [{ en: 'Storage', pt: 'Disco' }, { en: '2 GB available', pt: '2 GB livres' }]
+    ] },
+    { title: { en: 'PC - recommended', pt: 'PC - recomendados' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'Processor', pt: 'Processador' }, { en: '4 cores', pt: '4 núcleos' }],
+      [{ en: 'Memory', pt: 'Memória' }, '8 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, 'GTX 1050 / RX 560 or better']
+    ] },
+    { title: { en: 'Android', pt: 'Android' }, tag: { en: 'Phones and tablets', pt: 'Telemóveis e tablets' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Android 9+ (arm64)'],
+      [{ en: 'Memory', pt: 'Memória' }, '3 GB RAM'],
+      [{ en: 'Tested on', pt: 'Testado em' }, 'Samsung Galaxy A55']
+    ] }
   ]
 };

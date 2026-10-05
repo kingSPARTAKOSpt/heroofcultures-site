@@ -31,5 +31,8 @@ window.HOC_PT = {
   'play.note': 'Android e Windows 10/11 64-bit.',
   'footer.privacy': 'Privacidade',
   'footer.contact': 'Contacto',
-  'footer.rights': 'Todos os direitos reservados.'
+  'footer.rights': 'Todos os direitos reservados.',
+  'reqs.kicker': 'Requisitos',
+  'reqs.word': 'do sistema',
+  'reqs.note': 'Early Access: os requisitos podem mudar à medida que o jogo cresce.'
 };

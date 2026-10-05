@@ -142,5 +142,29 @@ window.HOC = {
       link: '',
       image: ''
     }
+  ],
+
+  /* ---- System requirements (bottom of the page) ---------------------- */
+  requirements: [
+    { title: { en: 'PC - minimum', pt: 'PC - mínimos' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Windows 10/11 64-bit'],
+      [{ en: 'Processor', pt: 'Processador' }, { en: '4 cores, 2.5 GHz', pt: '4 núcleos, 2,5 GHz' }],
+      [{ en: 'Memory', pt: 'Memória' }, '8 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, 'DirectX 12, GTX 1050 Ti / RX 570 (4 GB)'],
+      [{ en: 'Storage', pt: 'Disco' }, { en: '10 GB available', pt: '10 GB livres' }]
+    ] },
+    { title: { en: 'PC - recommended', pt: 'PC - recomendados' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Windows 11 64-bit'],
+      [{ en: 'Processor', pt: 'Processador' }, { en: '6 cores, 3.5 GHz', pt: '6 núcleos, 3,5 GHz' }],
+      [{ en: 'Memory', pt: 'Memória' }, '16 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, 'GTX 1660 / RX 5600 XT (6 GB) or better'],
+      [{ en: 'Storage', pt: 'Disco' }, { en: '10 GB on SSD', pt: '10 GB em SSD' }]
+    ] },
+    { title: { en: 'Android - coming soon', pt: 'Android - em breve' }, tag: { en: 'Phones and tablets', pt: 'Telemóveis e tablets' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Android 10+ (arm64)'],
+      [{ en: 'Memory', pt: 'Memória' }, '6 GB RAM'],
+      [{ en: 'Tested on', pt: 'Testado em' }, 'Samsung Galaxy A55'],
+      [{ en: 'Storage', pt: 'Disco' }, { en: '3 GB available', pt: '3 GB livres' }]
+    ] }
   ]
 };

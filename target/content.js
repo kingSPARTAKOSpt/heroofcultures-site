@@ -40,5 +40,21 @@ window.HOC = {
       link: '../stickman/',
       image: '../stickman/img/feature.webp'
     }
+  ],
+
+  requirements: [
+    { title: { en: 'PC - minimum', pt: 'PC - mínimos' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'OS', pt: 'Sistema' }, 'Windows 10/11 64-bit'],
+      [{ en: 'Processor', pt: 'Processador' }, { en: '4 cores, 3.0 GHz', pt: '4 núcleos, 3,0 GHz' }],
+      [{ en: 'Memory', pt: 'Memória' }, '8 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, 'DirectX 11, GTX 1050 Ti / RX 570'],
+      [{ en: 'Network', pt: 'Rede' }, { en: 'Broadband internet', pt: 'Internet de banda larga' }]
+    ] },
+    { title: { en: 'PC - recommended', pt: 'PC - recomendados' }, tag: { en: 'Windows', pt: 'Windows' }, rows: [
+      [{ en: 'Processor', pt: 'Processador' }, { en: '6 cores, 3.5 GHz', pt: '6 núcleos, 3,5 GHz' }],
+      [{ en: 'Memory', pt: 'Memória' }, '16 GB RAM'],
+      [{ en: 'Graphics', pt: 'Gráfica' }, 'GTX 1660 / RX 5600 XT or better'],
+      [{ en: 'Storage', pt: 'Disco' }, { en: 'SSD', pt: 'SSD' }]
+    ] }
   ]
 };

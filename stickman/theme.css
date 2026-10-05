@@ -20,7 +20,7 @@
 .btn--gold { background: linear-gradient(180deg, #ffb35c, var(--gold) 55%, var(--gold-lo)); color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, .35); }
 .kicker { font-family: var(--f-body); font-weight: 700; }
 /* The key art carries the logo in its middle: the text sits under it. */
-.hero { align-items: start; padding-top: calc(var(--nav-h) + 8px + min(28vw, 430px)); padding-bottom: 80px; }
+.hero { align-items: start; padding-top: calc(var(--nav-h) + var(--games-h) + 8px + min(28vw, 430px)); padding-bottom: 80px; }
 .hero__headline { font-size: clamp(2rem, 4.5vw, 3.2rem); }
 .hero__lead { margin: 12px 0 22px; }
 .hero__bg { background-position: center top; }
@@ -28,4 +28,4 @@
 .hero__headline em { color: var(--gold); }
 .era__num { font-family: var(--f-display); }
 /* The whole key art (logo included) across the top, never a cropped cover; the text sits under the logo. */
-.hero__bg { background-size: min(100%, 1536px) auto; background-position: center calc(var(--nav-h) + 8px); background-repeat: no-repeat; animation: none; inset: 0; width: 100%; height: 100%; }
+.hero__bg { background-size: min(100%, 1536px) auto; background-position: center calc(var(--nav-h) + var(--games-h) + 8px); background-repeat: no-repeat; animation: none; inset: 0; width: 100%; height: 100%; }

@@ -126,6 +126,21 @@
     });
   }
 
+  function renderReqs() {
+    var grid = document.getElementById('reqsGrid');
+    if (!grid || !C.requirements) return;
+    grid.innerHTML = '';
+    C.requirements.forEach(function (r) {
+      var card = el('article', 'reqs__card');
+      var rows = '';
+      r.rows.forEach(function (row) {
+        rows += '<dt>' + esc(t(row[0])) + '</dt><dd>' + esc(t(row[1])) + '</dd>';
+      });
+      card.innerHTML = '<h3>' + esc(t(r.title)) + '</h3><span class="reqs__tag">' + esc(t(r.tag)) + '</span><dl>' + rows + '</dl>';
+      grid.appendChild(card);
+    });
+  }
+
   var SOCIAL_NAMES = { discord: 'Discord', youtube: 'YouTube', twitch: 'Twitch', x: 'X', instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok' };
   // Simple-icons style glyphs (24x24 viewBox).
   var SOCIAL_ICONS = {
@@ -166,7 +181,7 @@
     var btn = document.getElementById('langBtn');
     btn.textContent = l === 'pt' ? 'EN' : 'PT';
     btn.setAttribute('aria-label', l === 'pt' ? 'Switch to English' : 'Mudar para português');
-    renderEras(); renderNews(); renderGames(); renderMore();
+    renderEras(); renderNews(); renderGames(); renderMore(); renderReqs();
     observeReveals();
     store('hoc-lang', l);
   }
