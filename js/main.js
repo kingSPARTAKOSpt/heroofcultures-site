@@ -198,12 +198,61 @@
     });
   }
 
+  /* ---- lightbox: click a picture to see it big (Esc / click / tap closes, arrows browse) ---- */
+  function initLightbox() {
+    var box = el('div', 'lightbox');
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-hidden', 'true');
+    var big = el('img', 'lightbox__img');
+    var cap = el('p', 'lightbox__cap');
+    var close = el('button', 'lightbox__close');
+    close.type = 'button';
+    close.setAttribute('aria-label', 'Close');
+    close.innerHTML = '&times;';
+    box.appendChild(big); box.appendChild(cap); box.appendChild(close);
+    document.body.appendChild(box);
+    var list = [], at = 0;
+    function pics() {
+      return Array.prototype.slice.call(document.querySelectorAll('.slot img, .zoomable'));
+    }
+    function show(i) {
+      at = (i + list.length) % list.length;
+      big.src = list[at].currentSrc || list[at].src;
+      big.alt = list[at].alt || '';
+      cap.textContent = list[at].alt || '';
+    }
+    function open(img) {
+      list = pics(); show(Math.max(0, list.indexOf(img)));
+      box.classList.add('lightbox--open');
+      box.setAttribute('aria-hidden', 'false');
+      document.documentElement.classList.add('no-scroll');
+    }
+    function hide() {
+      box.classList.remove('lightbox--open');
+      box.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.remove('no-scroll');
+    }
+    document.addEventListener('click', function (e) {
+      var img = e.target.closest && e.target.closest('.slot img, .zoomable');
+      if (img && !box.contains(img)) { e.preventDefault(); open(img); return; }
+      if (box.classList.contains('lightbox--open') && (e.target === box || e.target === close || e.target === big)) hide();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!box.classList.contains('lightbox--open')) return;
+      if (e.key === 'Escape') hide();
+      else if (e.key === 'ArrowRight') show(at + 1);
+      else if (e.key === 'ArrowLeft') show(at - 1);
+    });
+  }
+
   /* ---- boot ------------------------------------------------------------- */
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('langBtn').addEventListener('click', function () {
     applyLang(lang === 'pt' ? 'en' : 'pt');
   });
   initSlots();
+  initLightbox();
   wireLinks();
   renderSocial();
   initNav();

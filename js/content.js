@@ -110,7 +110,7 @@ window.HOC = {
       title: 'HoC II',
       genre: { en: 'Real-time strategy — base game', pt: 'Estratégia em tempo real — jogo base' },
       platforms: 'PC · Android (coming soon)',
-      status: { en: 'Early Access — free to play', pt: 'Early Access — grátis' },
+      status: { en: 'Early Access — free demo', pt: 'Early Access — demo grátis' },
       text: {
         en: 'The RTS mode of Hero of Cultures: heroes, armies and historical battles — on PC now, on mobile soon.',
         pt: 'O modo RTS do Hero of Cultures: heróis, exércitos e batalhas históricas — no PC agora, no telemóvel em breve.'

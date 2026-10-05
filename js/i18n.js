@@ -11,7 +11,7 @@ window.HOC_PT = {
   'cta.playNow': 'Na Epic Games Store',
   'nav.play': 'Jogar',
 
-  'hero.badge': 'Early Access · Grátis',
+  'hero.badge': 'Early Access · Demo grátis',
   'hero.soon': '· em breve',
   'hero.headline': 'Comanda exércitos.<br><em>Muda a história.</em>',
   'hero.lead': 'Um jogo de estratégia histórica em que heróis lideram exércitos em batalha — e lutam na terceira pessoa. No PC com demo grátis, Android em breve.',
