@@ -15,10 +15,10 @@ window.HOC = {
   eras: [
     { en: 'Battle royale', pt: 'Battle royale',
       d: { en: 'Up to 100 players on dedicated servers, open at scheduled play sessions.', pt: 'Até 100 jogadores em servidores dedicados, abertos em sessões de jogo marcadas.' } },
-    { en: 'Melee & more', pt: 'Corpo a corpo',
-      d: { en: 'Shields instead of pans, swords instead of crowbars - and vehicles to cross the map.', pt: 'Escudos em vez de panelas, espadas em vez de pés de cabra - e veículos para atravessar o mapa.' } },
-    { en: 'Next', pt: 'A seguir',
-      d: { en: 'Unreal Engine 5, then Android and consoles. Feedback welcome!', pt: 'Unreal Engine 5, depois Android e consolas. Diz-nos o que achas!' } }
+    { en: 'Strategic maps', pt: 'Mapas estratégicos',
+      d: { en: 'Maps built for tactical movement - cover, high ground and routes that reward planning every rotation.', pt: 'Mapas pensados para movimentação tática - cobertura, terreno elevado e rotas que premeiam quem planeia cada avanço.' } },
+    { en: 'Fun & competitive', pt: 'Diversão e competição',
+      d: { en: 'Our goal: a fun third-person experience and a truly competitive mode in close combat.', pt: 'O nosso objetivo: garantir diversão na terceira pessoa (TPP) e um modo competitivo a sério no combate corpo a corpo.' } }
   ],
 
   moreGames: [
