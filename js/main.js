@@ -233,7 +233,7 @@
     document.body.appendChild(box);
     var list = [], at = 0;
     function pics() {
-      return Array.prototype.slice.call(document.querySelectorAll('.slot img, .zoomable'));
+      return Array.prototype.slice.call(document.querySelectorAll('.slot img, .zoomable')).filter(function (i) { return !i.closest('a'); });
     }
     function show(i) {
       at = (i + list.length) % list.length;
@@ -254,6 +254,7 @@
     }
     document.addEventListener('click', function (e) {
       var img = e.target.closest && e.target.closest('.slot img, .zoomable');
+      if (img && img.closest('a')) img = null;
       if (img && !box.contains(img)) { e.preventDefault(); open(img); return; }
       if (box.classList.contains('lightbox--open') && (e.target === box || e.target === close || e.target === big)) hide();
     });

@@ -22,7 +22,24 @@
 </head>
 <body>
 
-<nav class="gamesbar" aria-label="PraeliaLab games"><span class="gamesbar__studio">PraeliaLab</span><a href="../">Hero of Cultures</a><a href="../stickman/" aria-current="page">Stickman Ultimate</a><a href="../target/">Target</a></nav>
+<nav class="gamesbar" aria-label="PraeliaLab games">
+  <span class="gamesbar__studio">PraeliaLab</span>
+  <a class="gamecard" href="../">
+    <span class="gamecard__img" style="background-image:url('../img/hero-keyart.webp')" aria-hidden="true"></span>
+    <span class="gamecard__text"><strong>Hero of Cultures</strong><small data-i18n="games.hoc">Strategy</small></span>
+    <span class="gamecard__enter" data-i18n="games.enter">Enter</span>
+  </a>
+  <a class="gamecard is-current" href="../stickman/" aria-current="page">
+    <span class="gamecard__img" style="background-image:url('../stickman/img/feature.webp')" aria-hidden="true"></span>
+    <span class="gamecard__text"><strong>Stickman Ultimate</strong><small data-i18n="games.stickman">Fighting</small></span>
+    <span class="gamecard__enter" data-i18n="games.here">You are here</span>
+  </a>
+  <a class="gamecard" href="../target/">
+    <span class="gamecard__img" style="background-image:url('../target/img/keyart.webp')" aria-hidden="true"></span>
+    <span class="gamecard__text"><strong>Target</strong><small data-i18n="games.target">Battle royale</small></span>
+    <span class="gamecard__enter" data-i18n="games.enter">Enter</span>
+  </a>
+</nav>
 <header class="nav" id="nav">
   <div class="nav__bar">
     <a class="nav__brand" href="#top" aria-label="Stickman Ultimate — home">

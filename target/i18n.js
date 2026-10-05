@@ -34,5 +34,10 @@ window.HOC_PT = {
   'footer.rights': 'Todos os direitos reservados.',
   'reqs.kicker': 'Requisitos',
   'reqs.word': 'do sistema',
-  'reqs.note': 'Early Access: os requisitos podem mudar à medida que o jogo cresce.'
+  'reqs.note': 'Early Access: os requisitos podem mudar à medida que o jogo cresce.',
+  'games.enter': 'Entrar',
+  'games.here': 'Estás aqui',
+  'games.hoc': 'Estratégia',
+  'games.stickman': 'Luta',
+  'games.target': 'Battle royale'
 };
