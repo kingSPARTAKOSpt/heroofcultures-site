@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261005">
 </head>
 <body>
 
@@ -126,6 +126,80 @@
 
 </section>
 
+<!-- ============ MODES (tabs + gallery) ============ -->
+<section class="modes" id="modes">
+  <div class="section-head reveal">
+    <p class="kicker" data-i18n="modes.kicker">Two ways to</p>
+    <h2 class="bigword" data-i18n="modes.word">Fight</h2>
+    <p class="section-head__lead" data-i18n="modes.lead">Lead the army from above in HoC II, or step down and fight as Spartakos in third person. Early Access captures - art still in progress.</p>
+  </div>
+  <div class="modes__tabs reveal" role="tablist">
+    <button class="modes__tab is-on" type="button" role="tab" aria-selected="true" aria-controls="modes-rts"><span data-i18n="modes.tab.rts">HoC II · Strategy</span></button>
+    <button class="modes__tab" type="button" role="tab" aria-selected="false" aria-controls="modes-sp"><span data-i18n="modes.tab.sp">HoC: Spartakos · Third person</span></button>
+  </div>
+  <div class="modes__panel" id="modes-rts" role="tabpanel">
+    <div class="modes__stage">
+      <figure class="modes__slide is-on">
+        <img class="zoomable" src="img/shots/shot_01.webp" alt="Armies in formation - Banners hold the line while cavalry looks for the flank." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.rts1.t">Armies in formation</strong> <span data-i18n="modes.rts1.d">Banners hold the line while cavalry looks for the flank.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/shots/shot_03.webp" alt="The clash - Hundreds of soldiers fight as formed groups." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.rts2.t">The clash</strong> <span data-i18n="modes.rts2.d">Hundreds of soldiers fight as formed groups.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/shots/shot_05.webp" alt="Command your hero - Skills, groups and the hero at your fingertips." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.rts3.t">Command your hero</strong> <span data-i18n="modes.rts3.d">Skills, groups and the hero at your fingertips.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/hero-map.webp" alt="The whole war - Zoom out to the living campaign map." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.rts4.t">The whole war</strong> <span data-i18n="modes.rts4.d">Zoom out to the living campaign map.</span></figcaption>
+      </figure>
+      <button class="modes__nav modes__nav--prev" type="button" aria-label="Previous">&#8249;</button>
+      <button class="modes__nav modes__nav--next" type="button" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="modes__thumbs">
+      <button class="modes__thumb is-on" type="button" style="background-image:url('img/shots/shot_01.webp')" aria-label="Armies in formation"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/shots/shot_03.webp')" aria-label="The clash"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/shots/shot_05.webp')" aria-label="Command your hero"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/hero-map.webp')" aria-label="The whole war"></button>
+    </div>
+  </div>
+  <div class="modes__panel" id="modes-sp" role="tabpanel" hidden>
+    <div class="modes__stage">
+      <figure class="modes__slide is-on">
+        <img class="zoomable" src="img/spartakos/ludus_yard.webp" alt="The Ludus - The gladiator school of Batiatus: your hub between fights." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.sp1.t">The Ludus</strong> <span data-i18n="modes.sp1.d">The gladiator school of Batiatus: your hub between fights.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/spartakos/ludus_arena_fight2.webp" alt="The Arena ladder - Varro starts the side-view duels against the gladiators of the Ludus." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.sp2.t">The Arena ladder</strong> <span data-i18n="modes.sp2.d">Varro starts the side-view duels against the gladiators of the Ludus.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/spartakos/forest_adventure.webp" alt="Into the forest - Leave through the gate: survive the danger zone and reach its edge to move on." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.sp3.t">Into the forest</strong> <span data-i18n="modes.sp3.d">Leave through the gate: survive the danger zone and reach its edge to move on.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/spartakos/forest_fight.webp" alt="Fight in the wild - Roman soldiers and horsemen - sword, spear or bow, on foot or on horseback." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.sp4.t">Fight in the wild</strong> <span data-i18n="modes.sp4.d">Roman soldiers and horsemen - sword, spear or bow, on foot or on horseback.</span></figcaption>
+      </figure>
+      <figure class="modes__slide">
+        <img class="zoomable" src="img/spartakos/old_arena.webp" alt="The old arena of Capua - Oenomaus sends you into the old sands of Capua, where the crowd waits for entertainment." loading="lazy" width="1600" height="900">
+        <figcaption><strong data-i18n="modes.sp5.t">The old arena of Capua</strong> <span data-i18n="modes.sp5.d">Oenomaus sends you into the old sands of Capua, where the crowd waits for entertainment.</span></figcaption>
+      </figure>
+      <button class="modes__nav modes__nav--prev" type="button" aria-label="Previous">&#8249;</button>
+      <button class="modes__nav modes__nav--next" type="button" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="modes__thumbs">
+      <button class="modes__thumb is-on" type="button" style="background-image:url('img/spartakos/ludus_yard.webp')" aria-label="The Ludus"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/ludus_arena_fight2.webp')" aria-label="The Arena ladder"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/forest_adventure.webp')" aria-label="Into the forest"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/forest_fight.webp')" aria-label="Fight in the wild"></button>
+      <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/old_arena.webp')" aria-label="The old arena of Capua"></button>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ERAS ============ -->
 <section class="eras" id="eras">
   <div class="section-head reveal">
@@ -199,7 +273,7 @@
 </footer>
 
 <script src="js/content.js"></script>
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+<script src="js/i18n.js?v=20261005"></script>
+<script src="js/main.js?v=20261005"></script>
 </body>
 </html>
