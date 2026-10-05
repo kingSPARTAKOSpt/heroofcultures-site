@@ -311,6 +311,7 @@ a.card:hover, .card:hover { border-color: var(--line); transform: translateY(-3p
 .footer__links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
 .footer__links a { color: var(--muted); text-decoration: none; font-size: .88rem; }
 .footer__links a:hover { color: var(--gold-hi); }
+.footer__studio { width: 140px; height: auto; opacity: .85; }
 .footer__copy { font-size: .8rem; color: #6f7280; margin: 0; }
 
 /* ---------- reveal on scroll ---------- */
