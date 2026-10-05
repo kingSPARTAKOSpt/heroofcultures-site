@@ -29,6 +29,7 @@ window.HOC_PT = {
   'play.discord': 'Entra no nosso Discord',
   'play.soon': 'itch.io - em breve',
   'play.note': 'Windows 64-bit. A arte desta página é arte conceptual, não são capturas do jogo.',
+  'footer.privacy': 'Privacidade',
   'footer.contact': 'Contacto',
   'footer.rights': 'Todos os direitos reservados.'
 };
