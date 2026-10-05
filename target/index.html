@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Target — 100-player battle royale | Early Access</title>
+  <meta name="description" content="Target is a free 100-player first-person battle royale with shields and swords. Peek in third person and you become the target. Early Access on PC. By PraeliaLab.">
+  <meta property="og:title" content="Target">
+  <meta property="og:description" content="100-player battle royale with shields and swords. Peek in third person - become the target. Early Access on PC.">
+  <meta property="og:image" content="https://heroofcultures.com/target/img/banner.webp">
+  <meta property="og:url" content="https://heroofcultures.com/target/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#top" aria-label="Target — home">
+      <span>Target</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#game" data-i18n="nav.game">The Game</a>
+      <a href="#road" data-i18n="nav.road">Road map</a>
+      <a href="#more" data-i18n="nav.more">More games</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang" id="langBtn" type="button" aria-label="Mudar para português">PT</button>
+      <a class="btn btn--gold btn--sm" href="#play" data-i18n="cta.play">Play</a>
+      <button class="nav__burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero__bg" style="background-image:url('img/keyart.webp')" aria-hidden="true"></div>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__content">
+    <img class="hero__logo" src="img/logo.png" alt="Target" width="600" height="219">
+    <span class="badge" data-i18n="hero.badge">Early Access · Free</span>
+    <h1 class="hero__headline" data-i18n="hero.headline">Peek.<br><em>Become the target.</em></h1>
+    <p class="hero__lead" data-i18n="hero.lead">A 100-player first-person battle royale with shields and swords. Peek in third person - and everyone nearby sees you through the walls.</p>
+    <a class="btn btn--gold btn--lg" href="#play" data-i18n="cta.get">Play the Early Access</a>
+    <div class="platforms">
+      <span class="platforms__label" data-i18n="hero.available">Available on</span>
+      <span class="platform" title="Windows PC">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg>
+        <span>PC</span>
+      </span>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#game" aria-label="Scroll down"><span></span></a>
+</section>
+
+<section class="features" id="game">
+  <article class="feature reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f1.kicker">Up to</p>
+      <h2 class="bigword" data-i18n="f1.word">100 players</h2>
+      <p data-i18n="f1.text">Drop in, gear up and be the last one standing. Dedicated servers for up to 100 players, open at scheduled play sessions.</p>
+    </div>
+    <figure class="slot"><img src="img/keyart.webp" alt="Concept art: a soldier with shield and sword above the island, parachutes in the sky" loading="lazy"></figure>
+  </article>
+  <article class="feature feature--flip reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f2.kicker">Shields &amp;</p>
+      <h2 class="bigword" data-i18n="f2.word">Swords</h2>
+      <p data-i18n="f2.text">Classic battle royale - with shields instead of pans and swords instead of crowbars. First-person melee up close, and vehicles to cross the map.</p>
+    </div>
+    <figure class="slot"><img src="img/cover.webp" alt="Concept art: soldier with shield and sword over a city" loading="lazy"></figure>
+  </article>
+  <article class="feature reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f3.kicker">Peeking has a</p>
+      <h2 class="bigword" data-i18n="f3.word">Price</h2>
+      <p data-i18n="f3.text">Switch to third person to look around corners - but near other players you get marked through the walls for everyone. Know when to peek.</p>
+    </div>
+    <figure class="slot"><img src="img/banner.webp" alt="The Target logo" loading="lazy"></figure>
+  </article>
+</section>
+
+<section class="eras" id="road">
+  <div class="section-head reveal">
+    <p class="kicker" data-i18n="road.kicker">Early Access</p>
+    <h2 class="bigword" data-i18n="road.word">Road map</h2>
+    <p class="section-head__lead" data-i18n="road.lead">In development: expect bugs, and tell us what you think.</p>
+  </div>
+  <ol class="eras__row" id="erasRow"><!-- filled from content.js --></ol>
+</section>
+
+<section class="series" id="more">
+  <div class="section-head reveal">
+    <p class="kicker" data-i18n="more.kicker">PraeliaLab</p>
+    <h2 class="bigword" data-i18n="more.word">More games</h2>
+  </div>
+  <div class="cards cards--2" id="moreList"><!-- filled from content.js --></div>
+</section>
+
+<section class="play" id="play">
+  <div class="play__inner reveal">
+    <p class="kicker" data-i18n="play.kicker">Join the</p>
+    <h2 class="bigword" data-i18n="play.word">Arena</h2>
+    <p class="section-head__lead" data-i18n="play.lead">Target is coming to Early Access on PC (itch.io), free. Android and consoles later.</p>
+    <div class="play__buttons">
+      <a class="btn btn--gold btn--lg" data-link="itch" href="#">itch.io</a>
+      <span class="btn btn--outline btn--lg is-soon" aria-disabled="true" data-i18n="play.soon">itch.io - coming soon</span>
+      <a class="btn btn--outline btn--lg btn--icon" data-link="discord" href="#"><span data-i18n="play.discord">Join our Discord</span></a>
+    </div>
+    <p class="play__note" data-i18n="play.note">Windows 64-bit. The art on this page is concept art, not in-game screenshots.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img class="footer__logo" src="img/logo.png" alt="" width="160" height="58">
+  <div class="social" id="social"></div>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="#game" data-i18n="nav.game">The Game</a>
+    <a href="mailto:praelialab@gmail.com" data-i18n="footer.contact">Contact</a>
+    <a href="../">Hero of Cultures</a>
+  </nav>
+  <p class="footer__copy">© <span id="year">2026</span> PraeliaLab. Target is a trademark of PraeliaLab. <span data-i18n="footer.rights">All rights reserved.</span></p>
+</footer>
+
+<script src="content.js"></script>
+<script src="i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

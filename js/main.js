@@ -59,6 +59,7 @@
 
   function renderEras() {
     var row = document.getElementById('erasRow');
+    if (!row || !C.eras) return;
     row.innerHTML = '';
     C.eras.forEach(function (era, i) {
       var li = el('li', 'era');
@@ -72,6 +73,7 @@
 
   function renderNews() {
     var list = document.getElementById('newsList');
+    if (!list || !C.news) return;
     list.innerHTML = '';
     C.news.slice(0, 3).forEach(function (n) {
       var card = el('article', 'card reveal');
@@ -88,6 +90,7 @@
 
   function renderGames() {
     var list = document.getElementById('gamesList');
+    if (!list || !C.games) return;
     list.innerHTML = '';
     C.games.forEach(function (g) {
       var card = el(g.link ? 'a' : 'article', 'card card--game reveal');
@@ -110,14 +113,14 @@
     list.innerHTML = '';
     C.moreGames.forEach(function (g) {
       var card = el(g.link ? 'a' : 'article', 'card card--game reveal');
-      if (g.link) { card.href = g.link; card.target = '_blank'; card.rel = 'noopener'; }
+      if (g.link) { card.href = g.link; if (/^https?:/.test(g.link)) { card.target = '_blank'; card.rel = 'noopener'; } }
       card.appendChild(slot(g.image, 'Key art · 16:9', g.title));
       var body = el('div', 'card__body');
       body.innerHTML =
         '<p class="card__meta"><span class="tag">' + esc(t(g.genre)) + '</span><span>' + esc(g.platforms) + '</span></p>' +
         '<h3 class="card__title">' + esc(g.title) + '</h3>' +
         '<p>' + esc(t(g.text)) + '</p>' +
-        '<p class="card__status">' + esc(g.link ? t({ en: 'Play now', pt: 'Joga já' }) : t(g.status)) + '</p>';
+        '<p class="card__status">' + esc(g.status ? t(g.status) : t({ en: 'Play now', pt: 'Joga já' })) + '</p>';
       card.appendChild(body);
       list.appendChild(card);
     });
@@ -130,6 +133,7 @@
   };
   function renderSocial() {
     var box = document.getElementById('social');
+    if (!box || !C.social) return;
     box.innerHTML = '';
     Object.keys(C.social).forEach(function (k) {
       var url = C.social[k];

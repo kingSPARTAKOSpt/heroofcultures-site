@@ -1,0 +1,31 @@
+/* Stickman Ultimate: comic look on the HoC page model (only tokens and a few overrides). */
+:root {
+  --bg: #07090f;
+  --bg-2: #0c1220;
+  --panel: #111a2c;
+  --panel-2: #16223a;
+  --line: rgba(242, 140, 40, .32);
+  --line-soft: rgba(255, 255, 255, .08);
+  --gold: #f28c28;          /* orange accent (in-game menu) */
+  --gold-hi: #ffc477;
+  --gold-lo: #d7261e;       /* logo red */
+  --text: #f4f6fb;
+  --muted: #a9b3c6;
+  --ink: #120806;
+  --f-display: 'Bangers', 'Impact', system-ui, sans-serif;
+  --f-body: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.bigword, .hero__headline, .nav__brand span { letter-spacing: .04em; }
+.bigword { font-size: clamp(2.6rem, 7vw, 4.6rem); }
+.btn--gold { background: linear-gradient(180deg, #ffb35c, var(--gold) 55%, var(--gold-lo)); color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, .35); }
+.kicker { font-family: var(--f-body); font-weight: 700; }
+/* The key art carries the logo in its middle: the text sits under it. */
+.hero { align-items: start; padding-top: calc(var(--nav-h) + 8px + min(28vw, 430px)); padding-bottom: 80px; }
+.hero__headline { font-size: clamp(2rem, 4.5vw, 3.2rem); }
+.hero__lead { margin: 12px 0 22px; }
+.hero__bg { background-position: center top; }
+.hero__shade { background: linear-gradient(180deg, rgba(7, 9, 15, .15) 0%, rgba(7, 9, 15, .05) 40%, rgba(7, 9, 15, .85) 78%, var(--bg) 100%); }
+.hero__headline em { color: var(--gold); }
+.era__num { font-family: var(--f-display); }
+/* The whole key art (logo included) across the top, never a cropped cover; the text sits under the logo. */
+.hero__bg { background-size: min(100%, 1536px) auto; background-position: center calc(var(--nav-h) + 8px); background-repeat: no-repeat; animation: none; inset: 0; width: 100%; height: 100%; }

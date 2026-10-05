@@ -82,25 +82,25 @@ window.HOC = {
       title: 'Stickman Ultimate',
       genre: { en: 'Fighting', pt: 'Luta' },
       platforms: 'Android · PC',
-      status: { en: 'Coming soon - Early Access', pt: 'Em breve - Early Access' },
+      status: { en: 'Early Access', pt: 'Early Access' },
       text: {
         en: 'Fast stickman fighting - online & LAN 1v1 battles.',
         pt: 'Luta de stickman rápida - batalhas 1v1 online e em LAN.'
       },
-      link: '',
-      image: ''
+      link: 'stickman/',
+      image: 'stickman/img/feature.webp'
     },
     {
       title: 'Target',
       genre: { en: 'Battle royale', pt: 'Battle royale' },
       platforms: 'PC · mobile and consoles later',
-      status: { en: 'Coming soon', pt: 'Em breve' },
+      status: { en: 'Early Access', pt: 'Early Access' },
       text: {
-        en: '100-player first-person battle royale. Peek in third person. Get marked. Become the target.',
-        pt: 'Battle royale na primeira pessoa para 100 jogadores. Espreita na terceira pessoa. Fica marcado. Torna-te o alvo.'
+        en: '100-player first-person battle royale with shields and swords. Peek in third person. Get marked. Become the target.',
+        pt: 'Battle royale na primeira pessoa para 100 jogadores, com escudos e espadas. Espreita na terceira pessoa. Fica marcado. Torna-te o alvo.'
       },
-      link: '',
-      image: ''
+      link: 'target/',
+      image: 'target/img/keyart.webp'
     }
   ],
 

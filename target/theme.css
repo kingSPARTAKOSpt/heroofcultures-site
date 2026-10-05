@@ -1,0 +1,23 @@
+/* Target: dark tactical look on the HoC page model (only tokens and a few overrides). */
+:root {
+  --bg: #0a0a0c;
+  --bg-2: #111114;
+  --panel: #16161a;
+  --panel-2: #1d1d22;
+  --line: rgba(230, 38, 26, .35);
+  --line-soft: rgba(232, 232, 232, .08);
+  --gold: #e6261a;          /* accent red */
+  --gold-hi: #ff6a5c;
+  --gold-lo: #c8102e;       /* logo crosshair red */
+  --text: #e8e8e8;
+  --muted: #9a9aa2;
+  --ink: #ffffff;
+  --f-display: 'Oswald', 'Arial Narrow', system-ui, sans-serif;
+  --f-body: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.bigword { text-transform: uppercase; letter-spacing: .06em; }
+.btn--gold { background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo)); color: #fff; }
+.bigword { background: none; -webkit-text-fill-color: var(--text); color: var(--text); }
+.hero__logo { width: clamp(220px, 40vw, 460px); }
+.hero__shade { background: linear-gradient(180deg, rgba(10, 10, 12, .55) 0%, rgba(10, 10, 12, .25) 45%, rgba(10, 10, 12, .9) 85%, var(--bg) 100%); }
+.hero__headline em { color: var(--gold); }

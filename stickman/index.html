@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stickman Ultimate — Fast stickman fighting | Early Access</title>
+  <meta name="description" content="Stickman Ultimate is a fast, flashy stickman fighting game: online and LAN battles on PC and Android, in Early Access. By PraeliaLab.">
+  <meta property="og:title" content="Stickman Ultimate">
+  <meta property="og:description" content="Fast stickman fighting: online & LAN battles. Early Access on Android and PC.">
+  <meta property="og:image" content="https://heroofcultures.com/stickman/img/feature.webp">
+  <meta property="og:url" content="https://heroofcultures.com/stickman/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07090f">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#top" aria-label="Stickman Ultimate — home">
+      <img src="img/icon.png" alt="" width="40" height="40">
+      <span>Stickman Ultimate</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#game" data-i18n="nav.game">The Game</a>
+      <a href="#road" data-i18n="nav.road">Road map</a>
+      <a href="#more" data-i18n="nav.more">More games</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang" id="langBtn" type="button" aria-label="Mudar para português">PT</button>
+      <a class="btn btn--gold btn--sm" href="#play" data-i18n="cta.play">Play</a>
+      <button class="nav__burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero__bg" style="background-image:url('img/hero.webp')" aria-hidden="true"></div>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__content">
+    <span class="badge" data-i18n="hero.badge">Early Access</span>
+    <h1 class="hero__headline" data-i18n="hero.headline">Fly. Dash.<br><em>Blast them all.</em></h1>
+    <p class="hero__lead" data-i18n="hero.lead">Fast, flashy stickman fighting: online and LAN battles on PC and Android.</p>
+    <a class="btn btn--gold btn--lg" href="#play" data-i18n="cta.get">Play the Early Access</a>
+    <div class="platforms">
+      <span class="platforms__label" data-i18n="hero.available">Available on</span>
+      <span class="platform" title="Android">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12v8a1 1 0 0 1-1 1h-1v3h-2v-3h-4v3H8v-3H7a1 1 0 0 1-1-1zM4 9h1.5v6.5H4zM18.5 9H20v6.5h-1.5zM6.2 8a5.8 5.8 0 0 1 11.6 0zM9.5 5.5a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4m5 0a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4M7.6 2.3l1.3 2-.6.4-1.3-2zm8.8 0 .6.4-1.3 2-.6-.4z"/></svg>
+        <span>Android</span>
+      </span>
+      <span class="platform" title="Windows PC">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg>
+        <span>PC</span>
+      </span>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#game" aria-label="Scroll down"><span></span></a>
+</section>
+
+<section class="features" id="game">
+  <article class="feature reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f1.kicker">Fast</p>
+      <h2 class="bigword" data-i18n="f1.word">Fights</h2>
+      <p data-i18n="f1.text">Fly, dash and blast your rivals with energy strikes. 1v1 or bigger battles with 2, 4, 6 or 10 players, in matches from 5 to 60 minutes.</p>
+    </div>
+    <figure class="slot"><img src="img/art_1.webp" alt="Concept art: two stickmen clash over a lava arena" loading="lazy"></figure>
+  </article>
+  <article class="feature feature--flip reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f2.kicker">Play</p>
+      <h2 class="bigword" data-i18n="f2.word">Together</h2>
+      <p data-i18n="f2.text">Online with players anywhere - PC and Android in the same match - or on your local network, where games find each other.</p>
+    </div>
+    <figure class="slot"><img src="img/shot_games.webp" alt="The game list on a phone: online and LAN games" loading="lazy"></figure>
+  </article>
+  <article class="feature reveal">
+    <div class="feature__text">
+      <p class="kicker" data-i18n="f3.kicker">Your</p>
+      <h2 class="bigword" data-i18n="f3.word">Stickman</h2>
+      <p data-i18n="f3.text">Coming: sliders to shape your fighter, more or less muscle, always with the stickman look. More fighters and maps during Early Access.</p>
+    </div>
+    <figure class="slot"><img src="img/art_3.webp" alt="Concept art: a stickman flies over a city arena" loading="lazy"></figure>
+  </article>
+</section>
+
+<section class="eras" id="road">
+  <div class="section-head reveal">
+    <p class="kicker" data-i18n="road.kicker">Early Access</p>
+    <h2 class="bigword" data-i18n="road.word">Road map</h2>
+    <p class="section-head__lead" data-i18n="road.lead">What is in the game and what comes next.</p>
+  </div>
+  <ol class="eras__row" id="erasRow"><!-- filled from content.js --></ol>
+</section>
+
+<section class="series" id="more">
+  <div class="section-head reveal">
+    <p class="kicker" data-i18n="more.kicker">PraeliaLab</p>
+    <h2 class="bigword" data-i18n="more.word">More games</h2>
+  </div>
+  <div class="cards cards--2" id="moreList"><!-- filled from content.js --></div>
+</section>
+
+<section class="play" id="play">
+  <div class="play__inner reveal">
+    <p class="kicker" data-i18n="play.kicker">Join the</p>
+    <h2 class="bigword" data-i18n="play.word">Fight</h2>
+    <p class="section-head__lead" data-i18n="play.lead">Stickman Ultimate is coming to Early Access on Android (Google Play) and PC (itch.io). Expect changes - and tell us what you think.</p>
+    <div class="play__buttons">
+      <a class="btn btn--gold btn--lg" data-link="googlePlay" href="#">Google Play</a>
+      <a class="btn btn--gold btn--lg" data-link="itch" href="#">itch.io</a>
+      <span class="btn btn--outline btn--lg is-soon" aria-disabled="true" data-i18n="play.soon">Google Play &amp; itch.io - coming soon</span>
+      <a class="btn btn--outline btn--lg btn--icon" data-link="discord" href="#"><span data-i18n="play.discord">Join our Discord</span></a>
+    </div>
+    <p class="play__note" data-i18n="play.note">Android and Windows 10/11 64-bit.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img class="footer__logo" src="img/icon.png" alt="" width="56" height="56">
+  <div class="social" id="social"></div>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="#game" data-i18n="nav.game">The Game</a>
+    <a href="../stickman-privacy.html" data-i18n="footer.privacy">Privacy</a>
+    <a href="mailto:praelialab@gmail.com" data-i18n="footer.contact">Contact</a>
+    <a href="../">Hero of Cultures</a>
+  </nav>
+  <p class="footer__copy">© <span id="year">2026</span> PraeliaLab. Stickman Ultimate is a trademark of PraeliaLab. <span data-i18n="footer.rights">All rights reserved.</span></p>
+</footer>
+
+<script src="content.js"></script>
+<script src="i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
