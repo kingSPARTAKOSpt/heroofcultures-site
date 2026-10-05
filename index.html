@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261005b">
+  <link rel="stylesheet" href="css/style.css?v=20261005c">
 </head>
 <body>
 
@@ -135,11 +135,9 @@
     <h2 class="bigword" data-i18n="modes.word">Fight</h2>
     <p class="section-head__lead" data-i18n="modes.lead">Lead the army from above in HoC II, or step down and fight as Spartakos in third person. Early Access captures - art still in progress.</p>
   </div>
-  <div class="modes__tabs reveal" role="tablist">
-    <button class="modes__tab is-on" type="button" role="tab" aria-selected="true" aria-controls="modes-rts"><span data-i18n="modes.tab.rts">HoC II · Strategy</span></button>
-    <button class="modes__tab" type="button" role="tab" aria-selected="false" aria-controls="modes-sp"><span data-i18n="modes.tab.sp">HoC: Spartakos · Third person</span></button>
-  </div>
-  <div class="modes__panel" id="modes-rts" role="tabpanel">
+  <div class="modes__grid">
+  <div class="modes__panel reveal" id="modes-rts">
+    <h3 class="modes__title"><span data-i18n="modes.tab.rts">HoC II · Real-time strategy</span></h3>
     <div class="modes__stage">
       <figure class="modes__slide is-on">
         <img class="zoomable" src="img/shots/shot_01.webp" alt="Armies in formation - Banners hold the line while cavalry looks for the flank." loading="lazy" width="1600" height="900">
@@ -167,7 +165,8 @@
       <button class="modes__thumb" type="button" style="background-image:url('img/hero-map.webp')" aria-label="The whole war"></button>
     </div>
   </div>
-  <div class="modes__panel" id="modes-sp" role="tabpanel" hidden>
+  <div class="modes__panel reveal" id="modes-sp">
+    <h3 class="modes__title"><span data-i18n="modes.tab.sp">Adventure · Spartakos in third person</span></h3>
     <div class="modes__stage">
       <figure class="modes__slide is-on">
         <img class="zoomable" src="img/spartakos/ludus_yard.webp" alt="The Ludus - The gladiator school of Batiatus: your hub between fights." loading="lazy" width="1600" height="900">
@@ -199,6 +198,7 @@
       <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/forest_fight.webp')" aria-label="Fight in the wild"></button>
       <button class="modes__thumb" type="button" style="background-image:url('img/spartakos/old_arena.webp')" aria-label="The old arena of Capua"></button>
     </div>
+  </div>
   </div>
 </section>
 
@@ -274,8 +274,8 @@
   <p class="footer__copy">© <span id="year">2026</span> PraeliaLab. Hero of Cultures and HoC are trademarks of PraeliaLab. <span data-i18n="footer.rights">All rights reserved.</span></p>
 </footer>
 
-<script src="js/content.js"></script>
-<script src="js/i18n.js?v=20261005"></script>
-<script src="js/main.js?v=20261005"></script>
+<script src="js/content.js?v=20261005c"></script>
+<script src="js/i18n.js?v=20261005c"></script>
+<script src="js/main.js?v=20261005c"></script>
 </body>
 </html>

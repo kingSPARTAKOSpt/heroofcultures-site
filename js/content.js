@@ -127,8 +127,8 @@ window.HOC = {
         en: 'From the arena to freedom: fight as Spartakos, in the same game.',
         pt: 'Da arena à liberdade: luta como Spartakos, no mesmo jogo.'
       },
-      link: '',
-      image: ''
+      link: '#modes',
+      image: 'img/spartakos/ludus_arena_fight2.webp'
     },
     {
       title: 'HoC: Discoveries',

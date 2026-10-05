@@ -280,21 +280,10 @@
   applyLang(saved || ((navigator.language || '').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en'));
 })();
 
-/* ---- Modes: tabs + gallery ---------------------------------------------- */
+/* ---- Modes: two sliders ---------------------------------------------- */
 (function () {
   var root = document.getElementById('modes');
   if (!root) return;
-  var tabs = root.querySelectorAll('.modes__tab');
-  tabs.forEach(function (t) {
-    t.addEventListener('click', function () {
-      tabs.forEach(function (o) {
-        var on = o === t;
-        o.classList.toggle('is-on', on);
-        o.setAttribute('aria-selected', on ? 'true' : 'false');
-        document.getElementById(o.getAttribute('aria-controls')).hidden = !on;
-      });
-    });
-  });
   root.querySelectorAll('.modes__panel').forEach(function (p) {
     var slides = p.querySelectorAll('.modes__slide'), thumbs = p.querySelectorAll('.modes__thumb'), at = 0;
     function go(i) {
