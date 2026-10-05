@@ -26,7 +26,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); -webkit-text-size-adjust: 100%; }
+html { color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: var(--nav-h); -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--bg);
@@ -193,6 +193,7 @@ section { position: relative; }
   background: linear-gradient(180deg, var(--gold-hi) 0%, var(--gold) 50%, var(--gold-lo) 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   padding-bottom: .06em;
+  transform: translateZ(0);     /* own layer: avoids gradient text staying faded after the reveal fade-in */
 }
 
 /* ---------- media slots ---------- */
