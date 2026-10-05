@@ -347,35 +347,38 @@ a.card:hover, .card:hover { border-color: var(--line); transform: translateY(-3p
 html.no-scroll { overflow: hidden; }
 
 /* ---- PraeliaLab games selector (fixed on top of every page) ---- */
-:root { --games-h: 64px; }
+:root { --games-h: 92px; }
 html { scroll-padding-top: calc(var(--nav-h) + var(--games-h)); }
 .gamesbar {
   position: fixed; inset: 0 0 auto; z-index: 60; height: var(--games-h);
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 0 10px; background: rgba(5, 6, 10, .97); border-bottom: 1px solid rgba(255, 255, 255, .08);
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  padding: 0 12px; background: rgba(5, 6, 10, .97); border-bottom: 1px solid rgba(255, 255, 255, .08);
   overflow-x: auto; scrollbar-width: none; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 .gamesbar::-webkit-scrollbar { display: none; }
 .gamesbar__studio { color: #8b8f9c; font: 700 .7rem/1 system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; margin-right: 4px; flex: none; }
 .gamecard {
-  flex: none; display: flex; align-items: center; gap: 10px; height: 48px; padding: 4px 10px 4px 4px;
+  flex: none; display: flex; align-items: center; gap: 14px; height: 74px; padding: 6px 14px 6px 6px;
   border-radius: 6px; text-decoration: none; color: #e9eaee; background: rgba(255, 255, 255, .04);
   border: 1px solid rgba(255, 255, 255, .08); transition: background .2s, border-color .2s, transform .2s;
 }
 .gamecard:hover { background: rgba(255, 255, 255, .09); border-color: rgba(255, 255, 255, .22); transform: translateY(-1px); }
-.gamecard__img { width: 76px; height: 40px; border-radius: 4px; background: #222 center / cover no-repeat; flex: none; }
+.gamecard__img { width: 116px; height: 62px; border-radius: 4px; background: #222 center / cover no-repeat; flex: none; }
 .gamecard__text { display: flex; flex-direction: column; line-height: 1.15; }
-.gamecard__text strong { font-size: .82rem; font-weight: 700; white-space: nowrap; }
-.gamecard__text small { font-size: .68rem; color: #9a9eab; text-transform: uppercase; letter-spacing: .08em; }
+.gamecard__text strong { font-size: 1.02rem; font-weight: 700; white-space: nowrap; }
+.gamecard__text small { font-size: .76rem; color: #9a9eab; text-transform: uppercase; letter-spacing: .08em; }
 .gamecard__enter {
-  font: 700 .68rem/1 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap;
-  padding: 7px 10px; border-radius: 3px; background: var(--gold); color: var(--ink);
+  font: 700 .78rem/1 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap;
+  padding: 9px 14px; border-radius: 3px; background: var(--gold); color: var(--ink);
 }
 .gamecard.is-current { border-color: var(--gold); background: rgba(255, 255, 255, .08); cursor: default; }
 .gamecard.is-current .gamecard__enter { background: transparent; color: var(--gold-hi); box-shadow: inset 0 0 0 1px var(--gold); }
 .nav { top: var(--games-h); }
 .hero { padding-top: calc(var(--nav-h) + var(--games-h) + 24px); }
 @media (max-width: 720px) {
+  :root { --games-h: 76px; }
+  .gamecard { height: 60px; }
+  .gamecard__img { width: 84px; height: 46px; }
   .gamesbar { justify-content: flex-start; }
   .gamesbar__studio { display: none; }
   .gamecard__text small { display: none; }
