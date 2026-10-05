@@ -45,7 +45,7 @@ window.HOC = {
         en: 'The third-person mode takes shape: walk the ludus, challenge gladiators to side-view duels with counters, grabs and wall slams, ride horses, and follow Gannicus, Crixus and Spartakos through one story.',
         pt: 'O modo na terceira pessoa ganha forma: anda pelo ludus, desafia gladiadores para duelos de lado com contra-ataques, agarrões e embates contra paredes, monta a cavalo e segue Gannicus, Crixus e Spartakos numa só história.'
       },
-      image: ''
+      image: 'img/spartakos/ludus_yard.webp'
     },
     {
       date: '2026-10',
