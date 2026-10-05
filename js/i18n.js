@@ -14,7 +14,7 @@ window.HOC_PT = {
   'hero.badge': 'Early Access · Demo grátis',
   'hero.soon': '· em breve',
   'hero.headline': 'Comanda exércitos.<br><em>Muda a história.</em>',
-  'hero.lead': 'Um jogo de estratégia histórica em que heróis lideram exércitos em batalha — e lutam na terceira pessoa. No PC com demo grátis, Android em breve.',
+  'hero.lead': 'Comanda exércitos em estratégia em tempo real, ou desce ao terreno como o teu herói e luta na terceira pessoa. Um jogo histórico, duas formas de jogar. No PC com demo grátis, Android em breve.',
   'hero.available': 'Disponível para',
 
   'f1.kicker': 'Lidera os teus',
