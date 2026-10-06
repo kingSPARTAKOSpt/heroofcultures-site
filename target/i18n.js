@@ -14,7 +14,7 @@ window.HOC_PT = {
   'f1.text': 'Cai no mapa, apanha equipamento e sê o último de pé. Servidores dedicados para até 100 jogadores, abertos em sessões de jogo marcadas.',
   'f2.kicker': 'Visto através das',
   'f2.word': 'Paredes',
-  'f2.text': 'Espreita perto demais e as silhuetas acendem-se através das paredes - as deles e a tua. Lê as silhuetas, usa a cobertura e ataca primeiro.',
+  'f2.text': 'Espreita de forma desleal em combate próximo e ficas iluminado através das paredes. Espreita dentro da zona e as paredes escondem-te - mas o radar de pulso denuncia-te na mesma.',
   'f3.kicker': 'Espreitar tem',
   'f3.word': 'Preço',
   'f3.text': 'Passa para a terceira pessoa para espreitar à volta das esquinas e por cima da cobertura - mas perto de outros jogadores ficas marcado através das paredes para todos. Divertido na terceira pessoa, justo no corpo a corpo. Sabe quando espreitar.',
