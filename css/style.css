@@ -349,10 +349,10 @@ a.card:hover, .card:hover { border-color: var(--line); transform: translateY(-3p
 html.no-scroll { overflow: hidden; }
 
 /* ---- PraeliaLab games selector (fixed on top of every page) ---- */
-:root { --games-h: 92px; }
+:root { --games-h: 116px; --note-h: 24px; }
 html { scroll-padding-top: calc(var(--nav-h) + var(--games-h)); }
 .gamesbar {
-  position: fixed; inset: 0 0 auto; z-index: 60; height: var(--games-h);
+  position: fixed; inset: 0 0 auto; z-index: 60; height: calc(var(--games-h) - var(--note-h));
   display: flex; align-items: center; justify-content: center; gap: 14px;
   padding: 0 12px; background: rgba(5, 6, 10, .97); border-bottom: 1px solid rgba(255, 255, 255, .08);
   overflow-x: auto; scrollbar-width: none; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -378,7 +378,7 @@ html { scroll-padding-top: calc(var(--nav-h) + var(--games-h)); }
 .nav { top: var(--games-h); }
 .hero { padding-top: calc(var(--nav-h) + var(--games-h) + 24px); }
 @media (max-width: 720px) {
-  :root { --games-h: 76px; }
+  :root { --games-h: 100px; }
   .gamecard { height: 60px; }
   .gamecard__img { width: 84px; height: 46px; }
   .gamesbar { justify-content: flex-start; }
@@ -460,3 +460,9 @@ a .slot img { cursor: pointer; }
 .news .card__title { font-size: .95rem; margin-bottom: 6px; }
 .news .card__body p:not(.card__meta):not(.card__status) { font-size: .8rem; line-height: 1.5; margin: 0; }
 .modes__grid > .modes__panel:only-child { grid-column: 1 / -1; }
+.gamesnote {
+  position: fixed; left: 0; right: 0; top: calc(var(--games-h) - var(--note-h)); z-index: 60; height: var(--note-h); margin: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(5, 6, 10, .97); border-bottom: 1px solid rgba(255, 255, 255, .08);
+  color: #8b8f9c; font: 600 .68rem/1 system-ui, sans-serif; letter-spacing: .08em; text-align: center;
+}

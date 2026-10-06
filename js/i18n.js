@@ -82,5 +82,6 @@ window.HOC_PT = {
   'games.here': 'Estás aqui',
   'games.hoc': 'Estratégia',
   'games.stickman': 'Luta',
-  'games.target': 'Battle royale'
+  'games.target': 'Battle royale',
+  'games.note': 'Desenvolvido a solo desde 2021 — mais de 5 anos de trabalho.'
 };
