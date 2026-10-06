@@ -29,9 +29,9 @@ window.HOC_PT = {
 
   'modes.kicker': 'Duas formas de',
   'modes.word': 'Lutar',
-  'modes.lead': 'Comanda o exército de cima no HoC II, ou desce ao terreno e luta como Spartakos na terceira pessoa. Capturas do Early Access - arte ainda em desenvolvimento.',
+  'modes.lead': 'Da visão do general no HoC II à espada do gladiador no HoC: Spartakos. Capturas do Early Access - arte ainda em desenvolvimento.',
   'modes.tab.rts': 'HoC II · Estratégia em tempo real',
-  'modes.tab.sp': 'Aventura · Spartakos na terceira pessoa',
+  'modes.tab.sp': 'HoC: Spartakos · Aventura',
   'modes.rts1.t': 'Exércitos em formação',
   'modes.rts1.d': 'As bandeiras seguram a linha enquanto a cavalaria procura o flanco.',
   'modes.rts2.t': 'O choque',

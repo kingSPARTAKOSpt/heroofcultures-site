@@ -459,3 +459,4 @@ a .slot img { cursor: pointer; }
 .news .card__meta { font-size: .7rem; margin-bottom: 6px; gap: 8px; }
 .news .card__title { font-size: .95rem; margin-bottom: 6px; }
 .news .card__body p:not(.card__meta):not(.card__status) { font-size: .8rem; line-height: 1.5; margin: 0; }
+.modes__grid > .modes__panel:only-child { grid-column: 1 / -1; }
