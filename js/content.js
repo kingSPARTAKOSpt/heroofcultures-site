@@ -35,7 +35,7 @@ window.HOC = {
         en: 'Hero of Cultures is coming to the Epic Games Store as a full game with a free demo. PC and Android crossplatform play is coming soon - one game, the same battles on desktop and mobile.',
         pt: 'O Hero of Cultures chega à Epic Games Store como jogo completo, com uma demo grátis. O jogo crossplatform entre PC e Android vem em breve - um só jogo, as mesmas batalhas no computador e no telemóvel.'
       },
-      image: 'img/hero-triptych.webp'
+      image: 'img/shots/shot_03.webp'
     }
   ],
 
