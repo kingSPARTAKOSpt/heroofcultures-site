@@ -35,37 +35,7 @@ window.HOC = {
         en: 'Hero of Cultures is coming to the Epic Games Store as a full game with a free demo. PC and Android crossplatform play is coming soon - one game, the same battles on desktop and mobile.',
         pt: 'O Hero of Cultures chega à Epic Games Store como jogo completo, com uma demo grátis. O jogo crossplatform entre PC e Android vem em breve - um só jogo, as mesmas batalhas no computador e no telemóvel.'
       },
-      image: 'img/cover.webp'
-    },
-    {
-      date: '2026-10',
-      tag: { en: 'HoC: Spartakos', pt: 'HoC: Spartakos' },
-      title: { en: 'Spartakos: the ludus of Batiatus', pt: 'Spartakos: o ludus de Batiatus' },
-      text: {
-        en: 'The third-person mode takes shape: walk the ludus, challenge gladiators to side-view duels with counters, grabs and wall slams, ride horses, and follow Gannicus, Crixus and Spartakos through one story.',
-        pt: 'O modo na terceira pessoa ganha forma: anda pelo ludus, desafia gladiadores para duelos de lado com contra-ataques, agarrões e embates contra paredes, monta a cavalo e segue Gannicus, Crixus e Spartakos numa só história.'
-      },
-      image: 'img/spartakos/ludus_yard.webp'
-    },
-    {
-      date: '2026-10',
-      tag: { en: 'Heroes', pt: 'Heróis' },
-      title: { en: 'Heroes on the battlefield', pt: 'Heróis no campo de batalha' },
-      text: {
-        en: 'Your hero leads from the front: wake them, follow them in line or square, and use their skills to turn the battle.',
-        pt: 'O teu herói lidera da frente: acorda-o, segue-o em linha ou em quadrado e usa as suas habilidades para virar a batalha.'
-      },
-      image: 'img/shots/shot_05.webp'
-    },
-    {
-      date: '2026-09',
-      tag: { en: 'Battlefield', pt: 'Campo de batalha' },
-      title: { en: 'Fog of war and the 2D map', pt: 'Nevoeiro de guerra e o mapa 2D' },
-      text: {
-        en: 'Scout to see: forests hide units and the unknown stays dark. Zoom out and the 3D battlefield turns into a painted 2D map.',
-        pt: 'Só vês o que exploras: as florestas escondem unidades e o desconhecido fica às escuras. Afasta a câmara e o campo 3D passa a mapa 2D pintado.'
-      },
-      image: 'img/hero-map.webp'
+      image: 'img/hero-triptych.webp'
     }
   ],
 

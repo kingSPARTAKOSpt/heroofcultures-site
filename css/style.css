@@ -466,3 +466,12 @@ a .slot img { cursor: pointer; }
   background: rgba(5, 6, 10, .97); border-bottom: 1px solid rgba(255, 255, 255, .08);
   color: #8b8f9c; font: 600 .68rem/1 system-ui, sans-serif; letter-spacing: .08em; text-align: center;
 }
+/* Latest news: single horizontal card */
+.news .cards { grid-template-columns: 1fr; max-width: 760px; }
+.news .card { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+.news .card .slot { border-bottom: 0; border-right: 1px solid var(--line-soft); height: 100%; }
+.news .card__body { display: flex; flex-direction: column; justify-content: center; padding: 18px 22px; }
+@media (max-width: 620px) {
+  .news .card { grid-template-columns: 1fr; }
+  .news .card .slot { border-right: 0; border-bottom: 1px solid var(--line-soft); }
+}
