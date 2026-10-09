@@ -14,12 +14,12 @@ window.HOC = {
 
   /* "Eras" row reused as the Early Access road map. */
   eras: [
-    { en: 'Online & LAN', pt: 'Online e LAN',
-      d: { en: 'Online matches with players anywhere (PC and Android together) and LAN games that find each other.', pt: 'Partidas online com jogadores de qualquer lado (PC e Android juntos) e jogos em LAN que se encontram sozinhos.' } },
-    { en: 'Your stickman', pt: 'O teu stickman',
-      d: { en: 'Coming: sliders to shape your fighter, more or less muscle, always a true stickman.', pt: 'A caminho: sliders para moldar o teu lutador, mais ou menos músculo, sempre um verdadeiro stickman.' } },
+    { en: 'Modes', pt: 'Modos',
+      d: { en: 'Solo side runner (Rage: beat the clock / Chill: explore and smash), VS AI, watch AI vs AI, online Quick Match and LAN.', pt: 'Corrida lateral a solo (Rage: contra o relógio / Chill: explora e destrói), VS IA, ver IA contra IA, partida rápida online e LAN.' } },
+    { en: 'Your powers', pt: 'Os teus poderes',
+      d: { en: 'Unlock ki powers and put them in your Q/R slots. 10 stickman colours, touch controls on mobile, keyboard and mouse on PC.', pt: 'Desbloqueia poderes de ki e põe-nos nos slots Q/R. 10 cores de stickman, controlos táteis no telemóvel, teclado e rato no PC.' } },
     { en: 'More to come', pt: 'E mais',
-      d: { en: 'More fighters, maps and single-player content during Early Access.', pt: 'Mais lutadores, mapas e conteúdo a solo durante o Early Access.' } }
+      d: { en: 'Sliders to shape your fighter, more powers, fighters and maps during Early Access.', pt: 'Sliders para moldar o teu lutador, mais poderes, lutadores e mapas durante o Early Access.' } }
   ],
 
   /* Other PraeliaLab games at the bottom. */
