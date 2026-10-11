@@ -475,3 +475,6 @@ a .slot img { cursor: pointer; }
   .news .card { grid-template-columns: 1fr; }
   .news .card .slot { border-right: 0; border-bottom: 1px solid var(--line-soft); }
 }
+.trailer { max-width: var(--wrap); margin: 0 auto clamp(56px, 8vw, 100px); }
+.trailer .section-head { margin-bottom: 24px; }
+.slot--video video { width: 100%; height: 100%; object-fit: contain; background: #000; display: block; }

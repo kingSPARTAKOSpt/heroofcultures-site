@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20261009a">
-  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../css/style.css?v=20261011a">
+  <link rel="stylesheet" href="theme.css?v=20261011f">
 </head>
 <body>
 
@@ -66,7 +66,7 @@
 <main id="top">
 
 <section class="hero">
-  <div class="hero__bg" style="background-image:url('img/hero.webp')" aria-hidden="true"></div>
+  <div class="hero__bg" style="background-image:url('img/hero.webp?v=2')" aria-hidden="true"></div>
   <div class="hero__shade" aria-hidden="true"></div>
   <div class="hero__content">
     <span class="badge" data-i18n="hero.badge">Early Access</span>
@@ -89,13 +89,20 @@
 </section>
 
 <section class="features" id="game">
+  <div class="trailer reveal">
+    <div class="section-head">
+      <p class="kicker" data-i18n="trailer.kicker">Watch</p>
+      <h2 class="bigword" data-i18n="trailer.word">Trailer</h2>
+    </div>
+    <figure class="slot slot--video"><video controls playsinline preload="metadata" poster="media/trailer_poster.jpg" src="media/trailer.mp4"></video></figure>
+  </div>
   <article class="feature reveal">
     <div class="feature__text">
       <p class="kicker" data-i18n="f1.kicker">Fast</p>
       <h2 class="bigword" data-i18n="f1.word">Fights</h2>
-      <p data-i18n="f1.text">Melee combos and counters, then smash your rival through buildings and finish with ki: charged fireballs, beams, a force shield, dash and superhero flight - in a destructible 2.5D comic-style city.</p>
+      <p data-i18n="f1.text">Fast rounds, short matches. Smash your rival through buildings and finish with ki: charged fireballs, beams, a force shield, dash and flight - in a destructible 2.5D comic-style city.</p>
     </div>
-    <figure class="slot"><img src="img/art_1.webp" alt="Concept art: two stickmen clash over a lava arena" loading="lazy"></figure>
+    <figure class="slot"><img src="img/shot_fights.webp" alt="Two stickmen trade ki blasts on a city street" loading="lazy"></figure>
   </article>
   <article class="feature feature--flip reveal">
     <div class="feature__text">
@@ -103,13 +110,13 @@
       <h2 class="bigword" data-i18n="f2.word">Together</h2>
       <p data-i18n="f2.text">Online Quick Match with players anywhere - PC and Android in the same match, and you can keep playing while it finds one - or LAN games on your local network.</p>
     </div>
-    <figure class="slot"><img src="img/shot_games.webp" alt="The game list on a phone: online and LAN games" loading="lazy"></figure>
+    <figure class="slot"><img src="img/shot_together.webp" alt="A ki blast sends a car flying while a stickman charges in" loading="lazy"></figure>
   </article>
   <article class="feature reveal">
     <div class="feature__text">
       <p class="kicker" data-i18n="f3.kicker">Stickman</p>
       <h2 class="bigword" data-i18n="f3.word">Ultimate</h2>
-      <p data-i18n="f3.text">Real-time modes, turn-based modes and mixed or crossover modes. That is the Ultimate: crossing mechanics and finding dynamic ways to play, like a sandbox. Also coming: sliders to shape your fighter, always with the stickman look.</p>
+      <p data-i18n="f3.text">Build your fighter, step into the city, and break everything in your way. Melee, ki, flight and pure destruction, all in one fight - more modes are coming, new ways to have fun. That's the Ultimate.</p>
     </div>
     <figure class="slot"><img src="img/logo.webp" alt="Stickman Ultimate logo: a white stickman powering up in a golden aura" loading="lazy"></figure>
   </article>
@@ -164,7 +171,7 @@
 </footer>
 
 <script src="content.js?v=20261009a"></script>
-<script src="i18n.js?v=20261009a"></script>
+<script src="i18n.js?v=20261011c"></script>
 <script src="../js/main.js?v=20261006c"></script>
 </body>
 </html>
