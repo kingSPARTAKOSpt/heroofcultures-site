@@ -6,10 +6,10 @@ window.HOC = {
   links: {
     googlePlay: '',   // https://play.google.com/store/apps/details?id=com.praelialab.stickman once published
     itch: 'https://praelialab.itch.io/stickman-ultimate',
-    discord: 'https://discord.gg/EJ8BTv39P'
+    discord: 'https://discord.gg/bTrbX2kBKn'
   },
   social: {
-    discord: 'https://discord.gg/EJ8BTv39P'
+    discord: 'https://discord.gg/bTrbX2kBKn'
   },
 
   /* "Eras" row reused as the Early Access road map. */
