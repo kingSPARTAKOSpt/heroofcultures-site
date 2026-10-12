@@ -5,7 +5,7 @@
 window.HOC = {
   links: {
     googlePlay: '',   // https://play.google.com/store/apps/details?id=com.praelialab.stickman once published
-    itch: '',         // https://<user>.itch.io/stickman-ultimate once public
+    itch: 'https://praelialab.itch.io/stickman-ultimate',
     discord: 'https://discord.gg/EJ8BTv39P'
   },
   social: {
