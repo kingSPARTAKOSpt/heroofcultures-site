@@ -42,6 +42,7 @@ window.HOC_PT = {
   'test.b1': '1 · Entrar no grupo',
   'test.b2': '2 · Ser testador',
   'test.b3': 'Discord',
+  'test.codes': 'Queres o Ultimate Starter? Pede no nosso Discord - códigos grátis limitados para testadores e streamers.',
   'test.note': 'No PC: a demo gratuita está no itch.io.',
   'play.note': 'Android e Windows 10/11 64-bit.',
   'footer.privacy': 'Privacidade',
