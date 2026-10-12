@@ -56,5 +56,6 @@ window.HOC_PT = {
   'games.hoc': 'Estratégia',
   'games.stickman': 'Luta',
   'games.target': 'Battle royale',
+  'games.studio': 'Estúdio digital | Editora',
   'games.note': 'Desenvolvido a solo desde 2021 — mais de 5 anos de trabalho.'
 };

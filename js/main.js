@@ -4,12 +4,23 @@
   var C = window.HOC;
   var PT = window.HOC_PT || {};
   var lang = 'en';
+  /* Languages: EN lives in the HTML / content.js, PT in i18n.js, the rest in i18n/<code>.js (loaded on demand). */
+  var LANGS = [
+    ['en', 'English'], ['pt', 'Português'], ['br', 'Português (Brasil)'], ['es', 'Español'], ['fr', 'Français'],
+    ['ru', 'Русский'], ['tr', 'Türkçe'], ['pl', 'Polski'], ['id', 'Bahasa Indonesia'], ['vi', 'Tiếng Việt'],
+    ['tl', 'Filipino'], ['hi', 'हिन्दी'], ['zh', '简体中文']
+  ];
+  var LOCALE = { en: 'en-GB', pt: 'pt-PT', br: 'pt-BR', es: 'es', fr: 'fr', ru: 'ru', tr: 'tr', pl: 'pl', id: 'id', vi: 'vi', tl: 'fil', hi: 'hi', zh: 'zh-CN' };
+  var L = window.HOC_L = window.HOC_L || {};
+  function pack() { return L[lang] || { strings: {}, content: {} }; }
 
   /* ---- helpers ---------------------------------------------------------- */
   function t(field) {
     if (field == null) return '';
     if (typeof field === 'string') return field;
-    return field[lang] || field.en || '';
+    if (field[lang]) return field[lang];
+    if (lang !== 'en' && lang !== 'pt' && field.en) { var c = pack().content || {}; if (c[field.en]) return c[field.en]; }
+    return field.en || '';
   }
   function el(tag, cls, html) {
     var e = document.createElement(tag);
@@ -26,7 +37,7 @@
     var p = String(ym).split('-');
     var d = new Date(+p[0], (+p[1] || 1) - 1, +p[2] || 1);
     try {
-      return d.toLocaleDateString(lang === 'pt' ? 'pt-PT' : 'en-GB', p[2] ? { day: 'numeric', month: 'short', year: 'numeric' } : { month: 'long', year: 'numeric' });
+      return d.toLocaleDateString(LOCALE[lang] || 'en-GB', p[2] ? { day: 'numeric', month: 'short', year: 'numeric' } : { month: 'long', year: 'numeric' });
     } catch (e) { return ym; }
   }
   function store(k, v) {
@@ -170,20 +181,46 @@
   }
 
   /* ---- language --------------------------------------------------------- */
+  function i18nBase() {
+    var s = document.querySelector('script[src*="i18n.js"]');
+    return s ? s.getAttribute('src').replace(/i18n\.js.*$/, '') + 'i18n/' : 'js/i18n/';
+  }
+  function loadLang(l, done) {
+    if (l === 'en' || l === 'pt' || L[l]) return done();
+    var s = document.createElement('script');
+    s.src = i18nBase() + l + '.js?v=20261012';
+    s.onload = done;
+    s.onerror = function () { done(); };
+    document.head.appendChild(s);
+  }
   function applyLang(l) {
-    lang = l;
-    document.documentElement.lang = l;
-    document.querySelectorAll('[data-i18n]').forEach(function (e) {
-      if (e.dataset.en == null) e.dataset.en = e.innerHTML;
-      var k = e.getAttribute('data-i18n');
-      e.innerHTML = (l === 'pt' && PT[k]) ? PT[k] : e.dataset.en;
+    if (!LOCALE[l]) l = 'en';
+    loadLang(l, function () {
+      lang = l;
+      document.documentElement.lang = LOCALE[l];
+      var dict = l === 'pt' ? PT : (pack().strings || {});
+      document.querySelectorAll('[data-i18n]').forEach(function (e) {
+        if (e.dataset.en == null) e.dataset.en = e.innerHTML;
+        var k = e.getAttribute('data-i18n');
+        e.innerHTML = (l !== 'en' && dict[k]) ? dict[k] : e.dataset.en;
+      });
+      var sel = document.getElementById('langSel');
+      if (sel) sel.value = l;
+      renderEras(); renderNews(); renderGames(); renderMore(); renderReqs();
+      observeReveals();
+      store('hoc-lang', l);
     });
-    var btn = document.getElementById('langBtn');
-    btn.textContent = l === 'pt' ? 'EN' : 'PT';
-    btn.setAttribute('aria-label', l === 'pt' ? 'Switch to English' : 'Mudar para português');
-    renderEras(); renderNews(); renderGames(); renderMore(); renderReqs();
-    observeReveals();
-    store('hoc-lang', l);
+  }
+  function guessLang() {
+    var list = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase();
+      if (c === 'pt-br') return 'br';
+      if (c.indexOf('fil') === 0) return 'tl';
+      var b = c.split('-')[0];
+      if (LOCALE[b]) return b;
+    }
+    return 'en';
   }
 
   /* ---- nav -------------------------------------------------------------- */
@@ -268,16 +305,22 @@
 
   /* ---- boot ------------------------------------------------------------- */
   document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('langBtn').addEventListener('click', function () {
-    applyLang(lang === 'pt' ? 'en' : 'pt');
-  });
+  (function () {
+    var btn = document.getElementById('langBtn');
+    if (!btn) return;
+    var sel = document.createElement('select');
+    sel.id = 'langSel'; sel.className = 'lang'; sel.setAttribute('aria-label', 'Language');
+    LANGS.forEach(function (o) { var op = document.createElement('option'); op.value = o[0]; op.textContent = o[1]; sel.appendChild(op); });
+    sel.addEventListener('change', function () { applyLang(sel.value); });
+    btn.parentNode.replaceChild(sel, btn);
+  })();
   initSlots();
   initLightbox();
   wireLinks();
   renderSocial();
   initNav();
   var saved = store('hoc-lang');
-  applyLang(saved || ((navigator.language || '').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en'));
+  applyLang(saved || guessLang());
 })();
 
 /* ---- Modes: two sliders ---------------------------------------------- */

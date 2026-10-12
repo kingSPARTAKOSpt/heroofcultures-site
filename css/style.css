@@ -478,3 +478,9 @@ a .slot img { cursor: pointer; }
 .trailer { max-width: var(--wrap); margin: 0 auto clamp(56px, 8vw, 100px); }
 .trailer .section-head { margin-bottom: 24px; }
 .slot--video video { width: 100%; height: 100%; object-fit: contain; background: #000; display: block; }
+.gamesbar__studio small { display: block; margin-top: 5px; font: 500 .58rem/1 system-ui, sans-serif; letter-spacing: .08em; text-transform: none; color: #6b6f7c; }
+/* Language menu (select in the nav) */
+select.lang { appearance: none; -webkit-appearance: none; background: transparent; padding-right: 22px; max-width: 150px; text-transform: none; letter-spacing: .04em;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 11px) 50%, calc(100% - 7px) 50%; background-size: 4px 4px; background-repeat: no-repeat; }
+select.lang option { color: #111; background: #fff; }
